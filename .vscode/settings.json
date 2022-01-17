@@ -1,0 +1,8 @@
+{
+    "files.eol": "\n",
+    "editor.formatOnSave": true,
+    "prettier.requireConfig": true,
+    "editor.wordWrapColumn": 100,
+    "git.autofetch": true
+  }
+  

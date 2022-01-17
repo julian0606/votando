@@ -1,0 +1,52 @@
+{
+  "name": "votaciones",
+  "version": "1.0.0",
+  "description": "Monorepo - sistema de votación virtual para reuniones con zoom",
+  "main": "index.js",
+  "private": true,
+  "engines": {
+    "npm": "7.20.0",
+    "node": "16.13.1"
+  },
+  "workspaces": [
+    "packages/pandora",
+    "packages/gaia"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=*",
+    "start": "npm run start --workspace=*",
+    "devp": "npm run dev --workspace=pandora ",
+    "devg": "npm run start --workspace=gaia",
+    "lint": "eslint packages/**",
+    "lintfix": "eslint  packages/** --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julian0606/votando.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julian0606/votando/issues"
+  },
+  "homepage": "https://github.com/julian0606/votando#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^24.0.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.2",
+    "jest": "26.6.0",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.3.2",
+    "prettier-plugin-jsdoc": "^0.3.24"
+  }
+}
